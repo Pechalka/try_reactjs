@@ -1,5 +1,6 @@
 /** @jsx React.DOM */
-var React = require('react');
+var React = require('react'),
+ Tabs = require('./componets/Tabs');
 
 var Panel = React.createClass({
     getInitialState: function() {
@@ -10,16 +11,24 @@ var Panel = React.createClass({
         this.setState({ colapsed : !state })
     },
     render: function(){
-        
         var itemClass = "item " + (this.state.colapsed ? " " : " open");
         var btnClass = "active fa" +(this.state.colapsed ? " fa-angle-down" : " fa-angle-up");
 
-        return <div onClick={this.toggle} className={itemClass}>
-                <div  className="title">
+        var tabsBlock;
+        if (this.props.title == 'Expenditure'){
+            var tabItems = [
+             { title : 'Home', id : 2},
+            { title : 'Transport', id : 3}
+            ];
+            tabsBlock = <Tabs items={tabItems} id={2}/>;
+        }
+        return <div  className={itemClass}>
+                <div onClick={this.toggle}  className="title">
                     <h2 >{this.props.title}</h2>
                     <a className={btnClass}>
                     </a>
                 </div>
+                {tabsBlock}
                  <table>
                         <thead>
                             <tr>

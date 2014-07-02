@@ -1,5 +1,7 @@
 /** @jsx React.DOM */
-var React = require('react');
+var React = require('react')
+, Tabs = require('./componets/Tabs');
+
 
 module.exports = React.createClass({
     render: function () {
@@ -15,7 +17,11 @@ module.exports = React.createClass({
             { title : 'Take Home Pay' , className:" fa fa-angle-down"},
             { title : 'Take Home Pay' , className:"active fa fa-angle-down"}
         ]
-        return  <div>
+        var tabItems = [
+            { title : 'Home', id : 2},
+            { title : 'Transport', id : 3}
+        ];
+        return  <div className="wizard">
                      <div className="btn-breadcrumb">
                         <div href="#" className="income">
                             <h3>Income</h3>
@@ -30,6 +36,7 @@ module.exports = React.createClass({
                              <p>Lorem ipsume dolor</p>
                         </div>
                     </div>
+                    <Tabs items={tabItems}/>
                     <div className="categories-set group">
                         {items.map(function(i){
                             return <div>
