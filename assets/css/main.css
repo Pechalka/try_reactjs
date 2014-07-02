@@ -1,0 +1,388 @@
+body  {
+	padding: 30px;
+	font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+ .sidebar {
+ 	width: 250px;
+ 	float: left;
+ }
+
+ .content {
+ 	width: 100%;
+ 	margin-right: -250px;
+ 	float: right;
+ }
+
+ .step1 {
+ 	padding-left: 300px;
+ 	height: 265px;
+ 	background: url(img/step1.png) no-repeat;
+ }
+
+.promo h1 {
+	margin-bottom: 30px;
+}
+
+ .step1 h1 {
+ 	padding-top: 115px;
+ }
+
+
+ .step2 {
+ 	margin-top: 70px;
+ 	padding-right: 300px;
+ 	height: 265px;
+ 	background: url(img/step2.png) no-repeat 100%;
+ }
+
+ .step2 h1 {
+ 	padding-top: 130px;
+ }
+
+
+ .step3 {
+ 	margin-top: 100px;
+ 	padding-left: 300px;
+ 	height: 265px;
+ 	background: url(img/step3.png) no-repeat;
+ }
+
+
+.promo > div {
+ 	width: 265px;
+}
+
+.promo p {
+	line-height: 150%;
+	text-align: justify;
+}
+
+h1 {
+	color: #ccc;
+	font-weight: bold;
+	font-size: 200%;
+}
+
+.login > * {
+	width: 180px;
+}
+
+input {
+	padding: 20px 10px 20px 10px;
+	margin: 0 0 20px 0 ;
+	border: 0;
+	background-color: rgb(243, 248, 248);
+	font-size: 1.2em;
+}
+.logo {
+	margin-bottom: 25px;
+}
+
+.login-btn {
+	font-size: 1.2em;
+}
+a.fa-google-plus { 
+	background-color:#dd4b39; 
+	color:#FFF;  
+}
+a.fa-google-plus:hover { 
+	color:#dd4b39;
+	 background-color:#fff;
+}
+
+a.fa-twitter { 
+	background-color:#00acee; 
+	color:#FFF;  
+}
+a.fa-twitter:hover { 
+	color:#00acee;
+	background-color:#FFF;
+}
+
+a.fa-facebook { 
+	background-color:#3b5998; 
+	color:#FFF; 
+}
+a.fa-facebook:hover { 
+	color:#3b5998;
+	background:#FFF; 
+}
+
+.registration-btns a.fa-angle-down {
+	color: rgb(171, 190, 216);
+	background-color: rgb(243, 248, 248);
+	text-align: center;
+}
+
+.link {
+	color: rgb(171, 190, 216);
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	font-size: 80%;
+}
+.registr-btn {
+	position: relative;
+	font-size: 1.2em;
+}
+.registr-btn i {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.registration-btns a {
+	text-decoration: none;
+	font-size: 38px;
+	height: 38px;
+	width: 38px;
+	border-radius: 0;
+	margin-right: 3px;
+}
+.header {
+	width: 560px;
+	padding-left: 50px;
+}
+.header p {
+	color: #ccc;
+	line-height: 150%;
+	text-align: justify;
+	font-size: 95%;
+}
+
+.left-menu  li.wizard-link {
+	border-left: 20px solid #62c2e4;
+}
+
+.left-menu  li.budget {
+	border-left: 20px solid #f7fdca;
+}
+
+.left-menu  li.dashboard-link {
+	border-left: 20px solid #fecf71;
+}
+
+.left-menu  li.providers {
+	border-left: 20px solid #f0776c;
+}
+.left-menu li.active, li:hover {
+	background-color: rgb(248, 248, 249);
+}
+
+.left-menu  li {
+	margin-left: -30px;
+	height: 105px;
+	line-height: 105px;
+	text-align: center;
+}
+
+.left-menu a {
+	font-size: 180%;
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+
+h2 {
+	font-size: 140%;
+	text-transform: uppercase;
+}
+
+.dashboard-content {
+	width: 560px;
+}
+.dashboard-content img {
+	margin: 0 auto;
+	display: block;
+	margin-top: 20px;
+}
+.dashboard-content h2, .dashboard-content p, .dashboard-content h3 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+.btn-breadcrumb {
+	height: 105px;
+	margin-top: 40px;
+	width: 620px;
+}
+
+.btn-breadcrumb div {
+	width: 200px;
+	height: 105px;
+	text-align: center;
+	
+	display: inline-block;	
+}
+
+.btn-breadcrumb h3 {
+	font-size: 130%;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.btn-breadcrumb p {
+	color: #ccc;
+}
+
+.btn-breadcrumb .income {
+	background-color: rgb(178, 201, 102);
+}
+
+.btn-breadcrumb .expendioures {
+	background-color: rgb(216, 232, 178);
+}
+
+.btn-breadcrumb .savings {
+	background-color: rgb(248, 248, 249);
+}
+
+.categories-set {
+	margin-top: 60px;
+	width: 610px;
+}
+
+.categories-set div {
+	width: 290px;
+	padding-left: 15px;
+	height: 60px;
+	float: left;
+	position: relative;
+}
+
+.categories-set div p {
+	color: #ccc;
+}
+
+.categories-set div a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-decoration: none;
+	width: 59px;
+	height: 59px;
+	display: block;
+	
+	text-align: center;
+	line-height: 59px;
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(200, 201, 201);
+}
+
+.categories-set div a.active,
+.categories-set div a:hover {
+	background-color: rgb(248, 248, 249);
+	color: #000;	
+}
+
+.categories-set div a.active:hover{
+	color: rgb(200, 201, 201);
+}
+
+
+.wizard-next-btn {
+	float: right;
+	font-size: 1.2em;
+	width: 200px;
+	margin-top: 60px;
+}
+
+.wizard {
+	width: 610px;
+}
+
+.budget-container {
+	margin-top: 60px;
+	width: 610px;
+	border: 1px solid rgb(191, 191, 191);
+	border-top: none;
+}
+
+.budget-container .title {
+	position: relative;
+	height: 105px;
+	
+	border-top: 1px solid rgb(191, 191, 191);
+	border-left: 20px solid rgb(188, 205,210);
+}
+
+.budget-container .open .title {
+	border-left: 20px solid rgb(121, 155,165);
+}
+
+.budget-container .title h2 {
+	line-height: 105px;
+	margin-left: 20px;
+}
+
+.budget-container .title a {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	text-decoration: none;
+	color: rgb(214, 214, 214);
+	line-height: 105px;
+	font-size: 50px;
+}
+
+
+.budget-container .item table {
+	display: none;
+	border-top: 1px solid rgb(191, 191, 191);
+	padding-left: 10px;
+	text-align: center;
+}
+
+.budget-container .item table th {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid rgb(191, 191, 191);
+	border-right: 1px solid rgb(191, 191, 191);
+} 
+
+.budget-container .item table td {
+	border-right: 1px solid rgb(191, 191, 191);
+}
+
+.budget-container .item table tbody tr:hover {
+	background-color: rgb(248, 248, 249);
+	cursor: pointer;
+}
+
+.budget-container .item table tbody tr {
+	border-left: 20px solid rgb(240, 187, 19);
+	height: 60px;	
+	line-height: 60px;	
+	border-top: 1px solid rgb(191, 191, 191);
+}
+
+.budget-container .item table tbody tr.completed {
+	border-left: 20px solid rgb(178, 201 ,102);	
+}
+
+.budget-container .item table tbody tr.skip {
+	border-left: 20px solid rgb(232, 100, 49);	
+}
+
+.budget-container .item.open table {
+	display: block;
+}
+
+
+
+.budget-container .open .title {
+	background-color: rgb(248, 248, 249);
+}
+
+th.category {
+	width: 315px;
+}
+
+th.planing {
+	width: 120px;
+}
+
+th.actual {
+	width: 180px;
+}
