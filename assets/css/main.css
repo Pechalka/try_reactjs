@@ -33,7 +33,7 @@ body  {
  .step1 {
  	padding-left: 240px;
  	height: 210px;
- 	background: url(../../img/demo/step1.png) no-repeat;
+ 	background: url(img/step1.png) no-repeat;
  	background-size: 200px 200px;
  }
 
@@ -51,7 +51,7 @@ body  {
  	/*margin-left: 20px;*/
  	padding-right: 240px;
  	height: 210px;
- 	background: url(../../img/demo/step2.png) no-repeat 100%;
+ 	background: url(img/step2.png) no-repeat 100%;
  	background-size: 200px 200px;
  	margin-bottom: 30px;
  }
@@ -71,7 +71,7 @@ body  {
  	/*margin-top: 100px;*/
  	padding-left: 240px;
  	height: 210px;
- 	background: url(../../img/demo/step3.png) no-repeat;
+ 	background: url(img/step3.png) no-repeat;
  	background-size: 200px 200px;
  	margin-bottom: 30px;
  }
