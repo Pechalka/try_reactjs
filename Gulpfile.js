@@ -13,6 +13,7 @@ gulp.task('styles', function () {
             'assets/css/group.css',
             
             'assets/css/button.css',
+            'assets/css/bootstrap.modal.css',
           //  'build/font-awesome/css/font-awesome.css',
             'assets/css/main.css'
         ])

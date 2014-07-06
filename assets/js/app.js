@@ -34,6 +34,7 @@ var Yor = React.createClass({
                     description='Chec adn fill your finaces and plan.' />
     			{this.props.activeRoute}
     		</div>
+            <div id="popup"></div>
     	</div>;
     }
 });
@@ -42,6 +43,7 @@ var App = React.createClass({
     render: function () {
         return <div >
     			{this.props.activeRoute}
+                <div id="popup"></div>
     		</div>;
     }
 });
