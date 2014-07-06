@@ -23,10 +23,12 @@ var Panel = React.createClass({
             tabsBlock = <Tabs items={tabItems} id={2}/>;
         }
         return <div  className={itemClass}>
-                <div onClick={this.toggle}  className="title">
-                    <h2 >{this.props.title}</h2>
-                    <a className={btnClass}>
-                    </a>
+                <div className="offset">
+                    <div onClick={this.toggle}  className="title">
+                        <h2 >{this.props.title}</h2>
+                        <a className={btnClass}>
+                        </a>
+                    </div>
                 </div>
                 {tabsBlock}
                  <table>
