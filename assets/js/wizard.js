@@ -3,6 +3,24 @@ var React = require('react')
 , Tabs = require('./componets/Tabs');
 
 
+var Item = React.createClass({
+    handelClick : function(e){
+        e.preventDefault();
+        this.setState({ visible : !this.state.visible })
+    },
+    getInitialState : function(){
+        return { visible : this.props.data.visible }
+    },
+    render : function(){
+        var classes = 'fa fa-angle-down ' + (this.state.visible ? 'active' : '');
+        return <div onClick={this.handelClick}>
+                <h3>{this.props.data.title}</h3>
+                <a href="" className={classes}>
+                </a>    
+            </div>
+    }
+})
+
 module.exports = React.createClass({
     settingsClick : function(e){
         e.preventDefault()
@@ -28,16 +46,16 @@ module.exports = React.createClass({
     },
     render: function () {
         var items = [
-            { title : 'Take Home Pay' , className:"active fa fa-angle-down" },
-            { title : 'Take Home Pay' , className:"active fa fa-angle-down"},
-            { title : 'Take Home Pay' , className:" fa fa-angle-down"},
-            { title : 'Take Home Pay' , className:"active fa fa-angle-down"},
-            { title : 'Take Home Pay', className:"active fa fa-angle-down" },
-            { title : 'Take Home Pay' , className:" fa fa-angle-down"},
-            { title : 'Take Home Pay' , className:"active fa fa-angle-down"},
-            { title : 'Take Home Pay' , className:"active fa fa-angle-down"},
-            { title : 'Take Home Pay' , className:" fa fa-angle-down"},
-            { title : 'Take Home Pay' , className:"active fa fa-angle-down"}
+            { title : 'Take Home Pay' , visible: false },
+            { title : 'Take Home Pay' , visible: false},
+            { title : 'Take Home Pay' , visible: false},
+            { title : 'Take Home Pay' , visible: false},
+            { title : 'Take Home Pay', visible: false },
+            { title : 'Take Home Pay', visible: false},
+            { title : 'Take Home Pay' , visible: false},
+            { title : 'Take Home Pay', visible: false},
+            { title : 'Take Home Pay', visible: false},
+            { title : 'Take Home Pay' , visible: false}
         ]
         var tabs;
 
@@ -67,11 +85,7 @@ module.exports = React.createClass({
                     {tabs}
                     <div className="categories-set group">
                         {items.map(function(i){
-                            return <div>
-                                <h3>{i.title}</h3>
-                                <a href="" className={i.className}>
-                                </a>    
-                            </div>
+                            return <Item data={i}/>
                         })}
                     </div>
                     <a className="wizard-next-btn btn btn-success"  >Next</a>
